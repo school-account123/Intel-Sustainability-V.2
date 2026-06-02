@@ -1,8 +1,6 @@
 .image-row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem;
   padding: 1rem 0;
+  min-width: 0;
 }
 
 .image-card {
@@ -68,22 +66,13 @@ main.page-content {
 }
 
 .timeline-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 280px;
-  gap: 2rem;
-  align-items: start;
-}
-
-.image-row {
-  min-width: 0;
+  width: 100%;
 }
 
 .sidebar-cards {
-  display: grid;
-  gap: 1rem;
   padding: 1rem 0;
   width: 100%;
-  max-width: 260px;
+  max-width: 100%;
 }
 
 .page-note {
@@ -142,10 +131,6 @@ body {
 }
 
 @media (max-width: 900px) {
-  .timeline-layout {
-    grid-template-columns: 1fr;
-  }
-
   .image-card img {
     min-height: 200px;
   }
@@ -166,10 +151,6 @@ body {
 }
 
 @media (max-width: 620px) {
-  .image-row {
-    grid-template-columns: 1fr;
-  }
-
   .timeline-layout {
     gap: 1rem;
   }
