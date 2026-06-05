@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intel: Sustainability Through the Ages</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link id="bootstrap-css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -35,74 +35,82 @@
   <!-- Timeline Cards Section -->
   <main class="page-content container">
     <section class="timeline-layout">
-      <div class="row gy-4">
-        <div class="col-12">
-          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4 image-row">
-            <div class="col">
-              <div class="image-card">
-                <img src="img/1.jpg" alt="Intel sustainability scene 1" />
-                <div class="card-overlay">
-                  <h2>1968</h2>
-                  <h3>Intel Founded</h3>
-                  <p>
-                    Robert Noyce and Gordon Moore rename the newly formed company 
-                    NM Electronics to Intel Corporation, laying the foundation for 
-                    decades of technological innovation.
-                  </p>
-                </div>
-              </div>
-            </div>
+      <div id="timelineCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#timelineCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#timelineCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#timelineCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#timelineCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#timelineCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#timelineCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#timelineCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#timelineCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#timelineCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+        </div>
 
-            <div class="col">
-              <div class="image-card">
-                <img src="img/2.jpg" alt="Intel sustainability scene 2" />
-                <div class="card-overlay">
-                  <h2>1971</h2>
-                  <h3>First Microprocessor</h3>
-                  <p>
-                    Intel debuts the 4004, the world's first commercial microprocessor, 
-                    igniting the microprocessor revolution and propelling the future 
-                    of computing devices.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="image-card">
-                <img src="img/3.jpg" alt="Intel sustainability scene 3" />
-                <div class="card-overlay">
-                  <h2>1978</h2>
-                  <h3>8086 Processor</h3>
-                  <p>
-                    Launch of the 8086 processor, establishing the x86 architecture 
-                    that drives countless PCs and servers in the modern era.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="image-card">
-                <img src="img/4.jpg" alt="Intel sustainability scene 4" />
-                <div class="card-overlay">
-                  <h2>1985</h2>
-                  <h3>386 Processor</h3>
-                  <p>
-                    Intel introduces the 386 processor with 32-bit architecture, 
-                    ushering in a new era of performance and multitasking for 
-                    personal computers.
-                  </p>
-                </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="image-card mx-auto" style="max-width: 720px;">
+              <img src="img/1.jpg" alt="Intel sustainability scene 1" />
+              <div class="card-overlay">
+                <h2>1968</h2>
+                <h3>Intel Founded</h3>
+                <p>
+                  Robert Noyce and Gordon Moore rename the newly formed company 
+                  NM Electronics to Intel Corporation, laying the foundation for 
+                  decades of technological innovation.
+                </p>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-12">
-          <div class="row row-cols-1 row-cols-md-2 g-4 sidebar-cards">
-            <div class="col">
-              <div>
+          <div class="carousel-item">
+            <div class="image-card mx-auto" style="max-width: 720px;">
+              <img src="img/2.jpg" alt="Intel sustainability scene 2" />
+              <div class="card-overlay">
+                <h2>1971</h2>
+                <h3>First Microprocessor</h3>
+                <p>
+                  Intel debuts the 4004, the world's first commercial microprocessor, 
+                  igniting the microprocessor revolution and propelling the future 
+                  of computing devices.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="image-card mx-auto" style="max-width: 720px;">
+              <img src="img/3.jpg" alt="Intel sustainability scene 3" />
+              <div class="card-overlay">
+                <h2>1978</h2>
+                <h3>8086 Processor</h3>
+                <p>
+                  Launch of the 8086 processor, establishing the x86 architecture 
+                  that drives countless PCs and servers in the modern era.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="image-card mx-auto" style="max-width: 720px;">
+              <img src="img/4.jpg" alt="Intel sustainability scene 4" />
+              <div class="card-overlay">
+                <h2>1985</h2>
+                <h3>386 Processor</h3>
+                <p>
+                  Intel introduces the 386 processor with 32-bit architecture, 
+                  ushering in a new era of performance and multitasking for 
+                  personal computers.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card mx-auto shadow-sm" style="max-width: 720px;">
+              <div class="card-body p-4">
                 <h2>2006</h2>
                 <h3>Peak GHG Emissions</h3>
                 <p>
@@ -113,9 +121,11 @@
                 </p>
               </div>
             </div>
+          </div>
 
-            <div class="col">
-              <div>
+          <div class="carousel-item">
+            <div class="card mx-auto shadow-sm" style="max-width: 720px;">
+              <div class="card-body p-4">
                 <h2>2020</h2>
                 <h3>RISE Strategy</h3>
                 <p>
@@ -125,9 +135,11 @@
                 </p>
               </div>
             </div>
+          </div>
 
-            <div class="col">
-              <div>
+          <div class="carousel-item">
+            <div class="card mx-auto shadow-sm" style="max-width: 720px;">
+              <div class="card-body p-4">
                 <h2>2022</h2>
                 <h3>Net-Zero By 2040</h3>
                 <p>
@@ -137,9 +149,11 @@
                 </p>
               </div>
             </div>
+          </div>
 
-            <div class="col">
-              <div>
+          <div class="carousel-item">
+            <div class="card mx-auto shadow-sm" style="max-width: 720px;">
+              <div class="card-body p-4">
                 <h2>2023</h2>
                 <h3>Renewable Electricity</h3>
                 <p>
@@ -149,9 +163,11 @@
                 </p>
               </div>
             </div>
+          </div>
 
-            <div class="col">
-              <div>
+          <div class="carousel-item">
+            <div class="card mx-auto shadow-sm" style="max-width: 720px;">
+              <div class="card-body p-4">
                 <h2>2024</h2>
                 <h3>Sustainability Summit</h3>
                 <p>
@@ -163,10 +179,89 @@
             </div>
           </div>
         </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#timelineCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#timelineCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="subscription-section mt-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+          <div class="p-4 rounded-4 text-center bg-white shadow-sm">
+            <h2 class="h4 mb-3">Stay updated on Intel sustainability news</h2>
+            <p class="mb-4 text-muted">
+              Subscribe for the latest stories, insights, and progress from our sustainability journey.
+            </p>
+            <form class="row g-2 align-items-center justify-content-center">
+              <div class="col-12 col-sm-8">
+                <label class="visually-hidden" for="subscription-email">Email address</label>
+                <input type="email" class="form-control form-control-lg" id="subscription-email" placeholder="Enter your email" aria-label="Email address" required>
+              </div>
+              <div class="col-12 col-sm-auto">
+                <button type="submit" class="btn btn-primary btn-lg w-100">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
 
     <p class="page-note">Scroll to view timeline | Hover over cards to learn more!</p>
   </main>
+
+  <footer class="site-footer bg-white border-top py-4">
+    <div class="container text-center">
+      <p class="mb-1">Intel: Sustainability Through the Ages</p>
+      <p class="text-muted mb-0">Built to celebrate Intel's sustainability milestones and inspire future innovation.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    (function () {
+      const rtlLanguages = [
+        'ar', 'he', 'fa', 'ur', 'ps', 'sd', 'ug', 'ku', 'dv', 'yi'
+      ];
+      const html = document.documentElement;
+      const bootstrapLink = document.getElementById('bootstrap-css');
+      const bootstrapLtr = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css';
+      const bootstrapRtl = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css';
+
+      function isRtlLanguage(lang) {
+        if (!lang) return false;
+        const code = String(lang).trim().toLowerCase().split('-')[0];
+        return rtlLanguages.includes(code);
+      }
+
+      function updateDirection(lang) {
+        const useRtl = isRtlLanguage(lang || html.lang);
+        html.dir = useRtl ? 'rtl' : 'ltr';
+        bootstrapLink.href = useRtl ? bootstrapRtl : bootstrapLtr;
+      }
+
+      const observer = new MutationObserver((mutations) => {
+        for (const mutation of mutations) {
+          if (mutation.type === 'attributes' && mutation.attributeName === 'lang') {
+            updateDirection(html.lang);
+          }
+        }
+      });
+
+      observer.observe(html, { attributes: true });
+      updateDirection(html.lang);
+
+      window.setPageLanguage = function (lang) {
+        if (!lang) return;
+        html.lang = lang;
+      };
+    })();
+  </script>
 </body>
 </html>
